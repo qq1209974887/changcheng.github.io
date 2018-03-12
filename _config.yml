@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://qq1209974887.github.io
 root: /changcheng.github.io/
-permalink: :year/:month/:day/:title/
+permalink: :year-:month-:day :title/
 permalink_defaults:
 
 # Directory
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: snippet
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +80,15 @@ deploy:
   type: git
   repository: git@github.com:qq1209974887/changcheng.github.io.git
   branch: gh-pages
+
+## 自定义Menu-王长城 -- 导航菜单显示{[@page:名字,@url:地址,@icon:图标]}
+menu:
+- page: home 
+  url: /changcheng.github.io
+  icon: fa-home
+
+## favicon -- 网站图标位置{@favicon}
+favicon: favicon.ico
+
+## rss --rss文件位置{@rss}
+rss: /atom.xml
